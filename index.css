@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+body{
+    background-color: rgb(36, 35, 35);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    /* background-color: whitesmoke; */
+}
+
+h1{
+    color:transparent;
+    display:flex;
+    margin: 5px;
+    font-family:'Rock Salt', cursive;
+    font-size:50px;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    justify-self: center;
+    
+    /* border:solid black 2px; */
+}
+
+.drums{
+    display: flex;
+    flex-direction: row;
+    /* border: solid black 2px; */
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:10px;
+}
+.drumKeys{
+    display:flex;
+    flex-direction:row;
+    width:30%;
+    /* justify-content:space-between; */
+    /* border: solid black 2px; */
+    flex-wrap: wrap;
+    border:red solid 2px;
+    padding:10px;
+}
+p{
+    /* border: solid black 2px; */
+    width:46%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2px;
+}
+
+.boom{
+    font-size: x-large;
+    color: rgb(238, 238, 54);
+}
+.clap{
+    font-size: x-large;
+    color: yellowgreen;
+}
+
+.hihat{
+    font-size: x-large;
+    color: rgb(238, 142, 238);
+}
+
+.kick{
+    font-size: x-large;
+    color: rgb(211, 59, 59);
+}
+.openhat{
+    font-size: x-large;
+    color: rgb(56, 165, 165);
+}
+.ride{
+    font-size: x-large;
+    color: rgb(214, 168, 82);
+}
+.snare{
+    font-size: x-large;
+    color: coral;
+}
+.tink{
+    font-size: x-large;
+    color: rebeccapurple;
+}
+.tom{
+    font-size: x-large;
+    color: green;
+}
+
+#drumButtons{
+    border: solid black 2px;
+    display:flex;
+    width: 480px;
+    height:480px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color:rgb(59, 59, 90);
+    border-radius: 2.0em;
+    margin:5px;
+   
+    
+}
+
+#boom{
+    font-size: xx-large;
+    width:140px;
+    height:140px;
+    margin-top: 15px;
+    font-family:'Rock Salt', cursive;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-image: linear-gradient(rgb(238, 238, 54), rgb(245, 245, 167), yellow) ;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#boom:active{
+    animation:shake 0.3s;
+    animation-iteration-count: infinite;
+
+}
+
+#clap{
+    font-size: xx-large;
+    width:140px;
+    height:140px;
+    margin-top: 15px;
+    font-family:'Rock Salt', cursive;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-image:linear-gradient(yellowgreen, rgb(226, 245, 188), yellowgreen); 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#clap:active{
+    animation:shake 0.3s;
+    animation-iteration-count: infinite;
+
+}
+#hihat{
+    font-size: xx-large;
+    width:140px;
+    height:140px;
+    margin-top: 15px;
+    font-family:'Rock Salt', cursive;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-image: linear-gradient( rgb(255, 109, 255),rgb(236, 186, 236), rgb(255, 109, 255)) ;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#hihat:active{
+    animation:shake 0.3s;
+    animation-iteration-count: infinite;
+    
+}
+
+#kick{
+    font-size: xx-large;
+    width:140px;
+    height:140px;
+    font-family:'Rock Salt', cursive;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-image: linear-gradient(rgb(211, 59, 59),rgb(250, 135, 135), rgb(211, 59, 59));
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#kick:active{
+    animation:shake 0.3s;
+    animation-iteration-count: infinite;
+}
+#openhat{
+    font-size:x-large;
+    width:140px;
+    height:140px;
+    font-family:'Rock Salt', cursive;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-image: linear-gradient( rgb(56, 165, 165), rgb(157, 216, 216), rgb(56, 165, 165));
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#openhat:active{
+    animation:shake 0.3s;
+    animation-iteration-count: infinite;
+}
+
+#ride{
+    font-size: xx-large;
+    width:140px;
+    height:140px;
+    font-family:'Rock Salt', cursive;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-image: linear-gradient( rgb(214, 168, 82), rgb(248, 212, 144), rgb(214, 168, 82));
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#ride:active{
+    animation:shake 0.3s;
+    animation-iteration-count: infinite;
+}
+
+#snare{
+    font-size: xx-large;
+    width:140px;
+    height:140px;
+    font-family:'Rock Salt', cursive;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-image:linear-gradient(coral, rgb(250, 173, 145),coral );
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#snare:active{
+    animation:shake 0.3s;
+    animation-iteration-count: infinite;
+}
+
+#tink{
+    font-size: xx-large;
+    width:140px;
+    height:140px;
+    font-family:'Rock Salt', cursive;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-image: linear-gradient(rebeccapurple, rgb(163, 130, 196) ,rebeccapurple);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#tink:active{
+    animation:shake 0.3s;
+    animation-iteration-count: infinite;
+}
+
+#tom{
+    font-size: xx-large;
+    width:140px;
+    height:140px;
+    font-family:'Rock Salt', cursive;
+    cursor: pointer;
+    border-radius: 0.5em;
+    background-image: linear-gradient( green, rgb(100, 179, 100)  ,green );
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#tom:active{
+    animation:shake 0.3s;
+    animation-iteration-count: infinite;
+}
+.shake{
+    animation:shake 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0%{ 
+        transform: translate(1px, 1px) rotate(0deg); 
+    }
+    10%{
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20%{
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30%{
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40%{
+        transform: translate(1px, -1px) rotate(1deg);}
+    50%{
+        transform: translate(-1px, 2px) rotate(-1deg);}
+    60%{
+        transform: translate(-3px, 1px) rotate(0deg);}
+    70%{
+        transform: translate(3px, 1px) rotate(-1deg);}
+    80%{
+        transform: translate(-1px, -1px) rotate(1deg);}
+    90%{
+        transform: translate(1px, 2px) rotate(0deg);}
+    100%{
+        transform: translate(1px, -2px) rotate(-1deg);}
+}
+
+/* Tablet settings */
+
+@media all and (max-width:870px) {
+
+h1{
+    font-size:40px;
+}
+.boom{
+    font-size: large;
+}
+.clap{
+    font-size: large;
+}
+.hihat{
+    font-size: large;
+}
+.kick{
+    font-size: large;
+}
+.openhat{
+    font-size: large;
+}
+.ride{
+    font-size: large;
+}
+.snare{
+    font-size: large;
+}
+.tink{
+    font-size: large;
+}
+.tom{
+    font-size: large;
+}
+#drumButtons{
+    width:360px;
+    height:360px; 
+}
+#boom{
+    font-size: x-large;
+    width:100px;
+    height:100px;
+}
+#clap{
+    font-size: x-large;
+    width:100px;
+    height:100px;
+}
+#hihat{
+    font-size: x-large;
+    width:100px;
+    height:100px;
+}
+#kick{
+    font-size: x-large;
+    width:100px;
+    height:100px;
+}
+#openhat{
+    font-size: medium;
+    width:100px;
+    height:100px;
+}
+#ride{
+    font-size: x-large;
+    width:100px;
+    height:100px;
+}
+#snare{
+    font-size: 20px;
+    width:100px;
+    height:100px;
+}
+#tink{
+    font-size: x-large;
+    width:100px;
+    height:100px;
+}
+#tom{
+    font-size: x-large;
+    width:100px;
+    height:100px;
+}
+};
+  /* Mobile Phone settings */
+
+
+  @media all and (max-width:500px) {
+body{
+    background-color: aliceblue;
+}
+};
